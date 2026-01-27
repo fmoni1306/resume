@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이태윤 - Backend Developer</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">이태윤</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">이력서</a>
+                <a href="portfolio.html" class="nav-link">포트폴리오</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- 헤더 섹션 -->
+        <header class="header">
+            <h1 class="name">이태윤</h1>
+            <p class="title">Backend Developer</p>
+            <div class="contact">
+                <span class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <a href="mailto:fmoni1306@gmail.com">fmoni1306@gmail.com</a>
+                </span>
+                <span class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    010-5605-2154
+                </span>
+                <span class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <a href="https://github.com/fmoni1306" target="_blank">GitHub</a>
+                </span>
+            </div>
+            <p class="intro">
+                Java, Kotlin, Spring Boot, MySQL을 기반으로 웹/앱 서비스의 백엔드 개발과 운영을 담당해왔습니다.
+                콜드체인 기반의 B2B·B2C 유통·물류 플랫폼에서 정합성, 성능, 품질을 아우르는 핵심 개선 작업을 주도했으며,
+                신규 기능과 서비스 런칭, 레거시 시스템 개편에도 기여했습니다.
+                기술은 결국 제품과 사용자에게 가치를 전해야 한다고 믿으며, 비즈니스 목표와 사용자 경험을 함께 고려해
+                고객이 체감할 수 있는 실질적인 변화를 만들어내는 데 집중합니다.
+            </p>
+        </header>
+
+        <!-- 기술 스택 섹션 -->
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3 class="skill-label">Language</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Kotlin</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-label">Frameworks & DB</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Spring</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-label">Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">ELK</span>
+                        <span class="tag">Kafka</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 핵심 성과 요약 섹션 -->
+        <section class="section">
+            <h2 class="section-title">Highlights</h2>
+            <ul class="highlights">
+                <li>대규모 트래픽 환경 운영 경험 (월 출고량 54만 건, API 월 300만 건)</li>
+                <li>WebFlux 비동기 처리로 데이터 수집 성능 90% 개선 (30분 → 3분)</li>
+                <li>Redis Streams/분산락 기반 동시성 제어로 데이터 정합성 확보</li>
+                <li>자가진단 알고리즘 응답 속도 98% 개선 (60초 → 1초 이내)</li>
+            </ul>
+        </section>
+
+        <!-- 경력 섹션 -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <article class="experience">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>STL</h3>
+                        <span class="period">2025.09 ~ 현재 (재직중)</span>
+                    </div>
+                    <p class="position">Backend Developer</p>
+                </div>
+                <p class="experience-desc">글로벌 풀필먼트 서비스 기업. 주문-재고-배송 실시간 통합 관리 시스템을 기반으로 해외 물류 자동화 솔루션 제공.</p>
+                <div class="experience-content">
+                    <div class="project">
+                        <h4>일본 3PL 시스템 구축</h4>
+                        <p class="project-desc">일본 물류 센터 운영을 위한 3PL(Third Party Logistics) 시스템</p>
+                        <ul class="achievements">
+                            <li>일본 현지 물류 운영 프로세스 분석 및 요구사항 정의</li>
+                            <li>주문 및 출고 도메인 백엔드 설계 및 개발</li>
+                            <li>Redis Streams 기반 재고 차감 동시성 제어 구현, 락 대기 시간 제거 및 운영 복잡도 감소</li>
+                            <li>i18n 기반 다국어 처리 적용</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h4>자사 정산 시스템 개발</h4>
+                        <p class="project-desc">출고 데이터 기반 정산 프로세스 자동화 시스템 (일 최대 20만 건, 월 최대 100만 건)</p>
+                        <ul class="achievements">
+                            <li>대용량 출고 데이터 수집 스케줄러 개발 및 정산 시스템 안정화</li>
+                            <li>WebFlux 기반 비동기 처리 도입으로 5만 건 기준 30분 → 3분 (90% 개선)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="experience">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>팀프레시</h3>
+                        <span class="period">2022.10 ~ 2024.11 (2년 2개월)</span>
+                    </div>
+                    <p class="position">Backend Developer</p>
+                </div>
+                <p class="experience-desc">콜드체인 플랫폼에서 B2B·B2C 유통/물류 서비스 개발 및 운영. 월 출고량 약 54만 건, API 월간 사용량 약 300만 건의 대규모 트래픽 환경을 안정적으로 운영.</p>
+                <div class="experience-content">
+                    <div class="project">
+                        <h4>RDMS - B2B 유통·물류 통합 플랫폼</h4>
+                        <ul class="achievements">
+                            <li>Redis 기반 분산락 적용으로 멀티 인스턴스 환경에서의 동시성 제어 및 데이터 정합성 확보</li>
+                            <li>아키텍처 전환 및 테스트 구조 개선</li>
+                            <li>Spring Batch를 도입하여 장애 복구와 재처리가 가능한 대용량 데이터 처리 자동화 구조 구축</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h4>새벽시장 - B2C 유통 플랫폼</h4>
+                        <ul class="achievements">
+                            <li>신규 서비스 런칭을 리딩하며 일정 지연 없이 안정적인 오픈</li>
+                            <li>주문/결제 도메인 데이터 모델링 및 외부 결제 모듈 연동</li>
+                            <li>복합 결제 로직 설계(쿠폰, 포인트 등 포함) 및 결제 흐름 안정화</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h4>팀플레이스 - B2B 유통 플랫폼</h4>
+                        <ul class="achievements">
+                            <li>주문 및 통계 시스템 레거시 구조 리팩토링 및 고도화</li>
+                            <li>트래픽 집중 구간의 성능 병목 구조 개선</li>
+                        </ul>
+                    </div>
+                    <p class="tech-stack">Java, Kotlin, SpringBoot, SpringBatch, MySQL, MsSQL, Redis</p>
+                </div>
+            </article>
+
+            <article class="experience">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>와이즈셀렉션</h3>
+                        <span class="period">2021.09 ~ 2022.09 (1년)</span>
+                    </div>
+                    <p class="position">Backend Developer</p>
+                </div>
+                <p class="experience-desc">영양제 추천 플랫폼 '건강비밀'의 자가진단 서비스 및 백오피스를 개발·운영하며 사용자 경험 개선, 알고리즘 고도화, 비동기 메시징 구조 도입, 검색 시스템 개선 등을 통해 서비스 확장성과 안정성을 확보.</p>
+                <div class="experience-content">
+                    <div class="project">
+                        <h4>건강비밀 - 영양제 자가진단 서비스</h4>
+                        <ul class="achievements">
+                            <li>Kafka 기반 비동기 메시징 및 CDC 구조 도입으로 서비스 병목 완화</li>
+                            <li>자가진단 알고리즘 응답 속도 최대 60초 → 1초 이내(98% 개선)로 단축</li>
+                            <li>통계 및 백오피스 관리 시스템 개선, 주요 지표 확인 자동화</li>
+                            <li>영양제 섭취 관리 리워드 서비스 개발로 재구매율 약 3배 향상</li>
+                            <li>ELK Stack을 활용한 로그 수집 및 시각화</li>
+                        </ul>
+                    </div>
+                    <p class="tech-stack">Java, SpringBoot, SpringCloud, Kafka, ELK, MySQL</p>
+                </div>
+            </article>
+
+            <article class="experience">
+                <div class="experience-header">
+                    <div class="experience-company">
+                        <h3>위인터랙트</h3>
+                        <span class="period">2021.03 ~ 2021.08 (6개월)</span>
+                    </div>
+                    <p class="position">Backend Developer (인턴)</p>
+                </div>
+                <p class="experience-desc">연구자 네트워크 플랫폼 '위인터랙트'에서 사업성 검증을 위한 MVP 프로덕트 개발.</p>
+                <div class="experience-content">
+                    <div class="project">
+                        <h4>MVP 프로덕트 개발</h4>
+                        <ul class="achievements">
+                            <li>프로젝트 팀원 연결 MVP 개발</li>
+                            <li>중개인을 통한 특허 거래 서비스를 위한 특허데이터 DB 모델링 & API 개발</li>
+                        </ul>
+                    </div>
+                    <p class="tech-stack">Python, Django, PostgreSQL, Google Cloud Platform</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- 핵심 역량 섹션 -->
+        <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+
+            <div class="competency">
+                <h3>Redis Streams 기반 재고 차감 동시성 제어</h3>
+                <p class="competency-context">STL - 일본 3PL 시스템</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>기존 분산락 방식은 락 대기 시간 발생 및 보상 트랜잭션 구현 필요로 운영 복잡도 증가</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>Pub/Sub 검토 시 메시지 유실 리스크가 커 Redis Streams 선택. 메시지 영속성과 Consumer Group 기반 순차 처리로 락 대기 시간 제거 및 운영 복잡도 감소</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency">
+                <h3>WebFlux 기반 대용량 데이터 처리 성능 개선</h3>
+                <p class="competency-context">STL - 자사 정산 시스템</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>외부 시스템에서 출고 데이터 수집 시 블로킹 I/O로 인한 응답 대기 시간 과다 (5만 건 기준 30분 소요)</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>WebFlux 기반 비동기 병렬 처리 도입으로 5만 건 기준 30분 → 3분 (90% 개선) 달성</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency">
+                <h3>Redis를 활용한 분산락 적용</h3>
+                <p class="competency-context">팀프레시 - RDMS (B2B 유통·물류 통합 플랫폼)</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>멀티 인스턴스 환경에서 공유 자원(재고, 출고 등)에 대한 동시 접근이 발생, 서버 간 락 관리가 되지 않아 중복 처리 및 데이터 불일치 문제 발생</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>Redisson 라이브러리를 활용해 Pub/Sub 기반의 분산락을 적용하고, 락 점유 시간 최소화 및 보상 트랜잭션 적용으로 동시성 이슈 해결</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency">
+                <h3>구조 개선을 통한 테스트 품질 및 유지보수성 향상</h3>
+                <p class="competency-context">팀프레시 - RDMS (B2B 유통·물류 통합 플랫폼)</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>서비스 클래스가 과도한 책임을 지고 외부 인프라에 강하게 결합되어 있어 단위 테스트 작성이 복잡하고 비효율적인 상황</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>SRP와 DIP를 중심으로 구조를 개선하고, 헥사고날 아키텍처의 포트 개념을 적용해 외부 인프라와의 결합도를 낮춤. 물류 도메인에 POC 적용 후 팀 내 가이드로 문서화</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency">
+                <h3>트래픽 집중 구간의 성능 병목 구조 개선</h3>
+                <p class="competency-context">팀프레시 - 팀플레이스 (B2B 유통 플랫폼)</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>주문 집중 시간대에 MsSQL의 락 경합과 데드락이 발생하여 CPU 및 메모리 사용률 급증, 서비스 응답 지연 및 중단 장애 반복</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>테이블 분리를 통해 읽기/갱신 데이터 분리, 인덱스 힌트 적용 및 구조 개선으로 기존 대비 기존 대비 수 배 수준의 주문 증가 상황에서도 안정적으로 처리 가능하도록 개선</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competency">
+                <h3>Kafka 도입 및 CDC 파이프라인 구축</h3>
+                <p class="competency-context">와이즈셀렉션 - 건강비밀 (B2C 커머스 서비스)</p>
+                <div class="competency-detail">
+                    <div class="problem-solution">
+                        <span class="label">Problem</span>
+                        <p>MSA 환경에서 서비스 간 통신이 모두 동기 방식으로 구현되어 응답 지연 이슈 발생, 협업사 DB 수작업 수정에 따른 운영 리스크 존재</p>
+                    </div>
+                    <div class="problem-solution">
+                        <span class="label">Solution</span>
+                        <p>Kafka의 높은 내구성, 메시지 재처리 기능, Consumer Group을 활용한 비동기 구조로 전환하여 서비스 병목 완화 및 운영 리스크 해소</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 교육/자격증 섹션 -->
+        <section class="section">
+            <h2 class="section-title">Education & Certification</h2>
+            <ul class="education-list">
+                <li>
+                    <div class="education-item">
+                        <span class="education-name">ATDD, 클린 코드 with Spring 8기</span>
+                        <span class="education-org">넥스트스텝</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-item">
+                        <span class="education-name">빅데이터 개발자 과정</span>
+                        <span class="education-org">부산 아이티윌</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-item">
+                        <span class="education-name">SQLD</span>
+                        <span class="education-org">2025</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>Last Updated: 2026.01</p>
+        </footer>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function setTheme(isDark) {
+            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme === 'dark');
+        } else {
+            setTheme(prefersDark.matches);
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            setTheme(currentTheme !== 'dark');
+        });
+
+        // Listen for system theme changes
+        prefersDark.addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                setTheme(e.matches);
+            }
+        });
+    </script>
+</body>
+</html>
