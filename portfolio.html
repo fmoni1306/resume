@@ -132,18 +132,18 @@
                     <h3>주요 성과</h3>
                     <div class="portfolio-achievements">
                         <div class="achievement-card">
-                            <h4>데이터 수집 성능 67% 개선</h4>
+                            <h4>데이터 수집 성능 90% 개선</h4>
                             <ul>
                                 <li>외부 API의 1회 호출당 99건 제한으로 5만 건 수집 시 500회 이상의 API 호출 필요</li>
                                 <li>성능 개선 단계별 발전 과정:
                                     <ul>
                                         <li>1단계: 동기 순차 방식 - 블로킹 I/O로 30분 소요</li>
                                         <li>2단계: ExecutorService 멀티스레드 - 병렬 처리로 속도는 개선되었으나 스레드 생성/관리 오버헤드 존재</li>
-                                        <li>3단계: WebFlux 비동기 병렬 - 논블로킹 I/O로 최종 10분 달성</li>
+                                        <li>3단계: WebFlux 비동기 병렬 - 논블로킹 I/O로 최종 3분 달성</li>
                                     </ul>
                                 </li>
-                                <li>flatMap concurrency 30으로 설정하여 외부 API 서버 부하를 고려하면서 병렬 처리 (테스트 기반 도출)</li>
-                                <li>5만 건 기준 30분 → 10분으로 단축 (67% 개선)</li>
+                                <li>flatMap concurrency 30으로 설정하여 외부 API 서버 부하를 고려하면서 병렬 처리</li>
+                                <li>5만 건 기준 30분 → 3분으로 단축 (90% 개선)</li>
                             </ul>
                         </div>
                         <div class="achievement-card">
