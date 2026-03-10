@@ -175,6 +175,7 @@
         </div>
         <ul class="portfolio-highlights">
             <li>데이터 수집 성능 90% 개선 (30분 → 3분)</li>
+            <li>출고 스케줄러 CPU 사용률 90% → 20% 최적화</li>
             <li>정산 프로세스 완전 자동화</li>
         </ul>
         <div class="portfolio-item-content">
@@ -221,6 +222,21 @@
                             <li>일/월 단위 대용량 데이터 안정적 처리</li>
                         </ul>
                     </div>
+                    <div class="achievement-card">
+                        <h4>운영 환경 CPU/메모리 오버헤드 최적화</h4>
+                        <ul>
+                            <li>개발 단계에서 concurrency 30으로 성능 목표를 달성했으나, 특정 기간 출고 집중(일 최대 30만 건) 시 CPU 사용률 90% 이상, 메모리 오버헤드 발생</li>
+                            <li>원인 분석: 단일 flatMap 구조에서 30개 동시 호출 시 JSON 역직렬화와 객체 변환이 4코어에서 경합, 전체 출고 데이터를 메모리에 로딩하는 비효율적 중복 체크</li>
+                            <li>flatMap 구조를 클라이언트별 × 청크별 2단계로 분리하고, 중복 체크를 IN절 기반 DB 조회로 변경</li>
+                            <li>CPU 평균 사용률 90% → 20% 수준으로 개선</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="gallery-item gallery-item-wide">
+                    <img src="images/cpu-optimization.png" alt="출고 스케줄러 CPU 사용률 추이" loading="lazy">
+                    <span class="gallery-caption">출고 스케줄러 CPU 사용률 추이 (배포 전후)</span>
                 </div>
             </div>
             <div class="portfolio-tech">
