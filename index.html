@@ -166,6 +166,15 @@
                     </ul>
                 </div>
                 <div class="project">
+                    <h4>통합 유통물류 시스템 (개발 중)</h4>
+                    <p class="project-desc">고객사별로 따로 운영하던 창고 시스템 3개를 하나로 합치는 시스템</p>
+                    <ul class="achievements">
+                        <li>창고 작업과 재고는 통합 시스템, 주문과 정산은 고객사별 ERP가 맡도록 경계를 나누고, 출고요청 외 연동은 MSK 이벤트로 설계</li>
+                        <li>고객사별 요구 차이는 고객사 규칙 설정으로 구현체를 골라 처리, 서비스 코드에 고객사 분기 없음</li>
+                        <li>구조 규칙 테스트, 실제 MySQL 통합 테스트, API 계약 테스트를 CI 관문으로 적용, 메시지 골든 파일과 뮤테이션 테스트는 출고 구현과 함께 도입 예정</li>
+                    </ul>
+                </div>
+                <div class="project">
                     <h4>일본 통관 시스템</h4>
                     <p class="project-desc">포워딩 시스템 연동 기반 일본 통관 프로세스 관리 시스템</p>
                     <ul class="achievements">
